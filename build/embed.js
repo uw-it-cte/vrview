@@ -9829,12 +9829,12 @@ function WebVRPolyfill() {
                                  navigator.getVRDisplays :
                                  null;
 
-  if (!this.nativeLegacyWebVRAvailable && !this.nativeWebVRAvailable) {
+//  if (!this.nativeLegacyWebVRAvailable && !this.nativeWebVRAvailable) {
     this.enablePolyfill();
     if (window.WebVRConfig.ENABLE_DEPRECATED_API) {
       this.enableDeprecatedPolyfill();
     }
-  }
+//  }
 
   // Put a shim in place to update the API to 1.1 if needed.
   InstallWebVRSpecShim();
